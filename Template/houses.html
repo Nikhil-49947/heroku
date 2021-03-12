@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html><head>
+<title>"HOUSING SITE"</title>
+<style>
+body{
+background: url("https://wonderfulengineering.com/wp-content/uploads/2014/01/beautiful-wallpaper-39.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+
+button{
+background-color:red;
+}
+</style>
+
+</head>
+
+<body>
+<body>
+<center>
+      <h1 style = "color:gold;"> <b> HOUSE PRICE PREDICTION </b> </h1>
+
+</br>
+<hr>
+</br>
+
+<div id = "houses">
+
+    <form action = "/" method  = "post">
+        <div>
+        <label for = "ID" >
+            <strong>NAME : </strong>
+        </label>
+        <input type ="text" name = "ID" placeholder = "House Title" required = "Required"></input>
+
+        </div>
+</br>
+
+<div>
+
+<label for = ""> <b> Number of Bedroom : </b> <label>
+    <select name="n_Bedrooms">
+        <option value = "0" > select </option>
+        <option value = "1"> 1 </option>
+        <option value = "2"> 2 </option>
+        <option value = "3"> 3 </option>
+        <option value = "4"> 4 </option>
+        <option value = "5"> 5 </option>
+        <option value = "6"> 6 </option>
+        <option value = "7"> 7 </option>
+        <option value = "8"> 8 </option>
+        <option value = "9"> 9 </option>
+    </select>
+</div>
+</br>
+
+<div>
+<label for = "Location"> <b>LOCATION : </b></label>
+    <select name = "Location">
+        <option value = "0" > select </option>
+        <option value = "hyderabad"> Hyderabad </option>
+        <option value = "bangalore"> Bangalore </option>
+        <option value = "chennai"> Chennai </option>
+        <option value = "gurgaon"> Gurgaon </option>
+        <option value = "noida"> Noida </option>
+        <option value = "mumbai"> Mumbai </option>
+
+</select>
+</div>
+</br>
+
+<div>
+
+<label for="area"> <b> AREA : </b> </label>
+<input type="text" name ="area" placeholder="Area in sq.ft">
+
+
+</br>
+</div>
+</br>
+
+<div>
+
+<label for="price_per_area"> <b> PRICE PER SQFT : </b> </label>
+<input type="integer" name ="price_per_area" placeholder="Amount">
+
+</div>
+</br>
+<button type= "submit"> <b> PREDICT </b> </button>
+
+</br>
+</br>
+<h3 style="color:orange;"<strong> {{ prediction_text }} </strong> </h3>
+
+
+
+</center>
+</div>
+</body>
+</html>
